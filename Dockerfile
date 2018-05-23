@@ -17,7 +17,7 @@ RUN apt-get update && apt-get install -y \
     graphviz
 
 # Install python 3.6 port
-RUN add-apt-repository ppa:deadsnakes/ppa && apt-get update && apt-get install python3.6
+RUN add-apt-repository ppa:deadsnakes/ppa && apt-get update && apt-get install -y python3.6
 
 # Install keras and theano dependencies not included in
 # https://github.com/tensorflow/tensorflow/blob/master/tensorflow/tools/docker/Dockerfile.gpu
