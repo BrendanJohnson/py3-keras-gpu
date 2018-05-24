@@ -48,6 +48,10 @@ RUN pip --no-cache-dir install --no-deps \
     keras \
     git+https://www.github.com/farizrahman4u/keras-contrib.git
 
+# Install PIP for Python 3.6
+ADD https://bootstrap.pypa.io/get-pip.py
+RUN python3.6 get-pip.py
+
 # Set keras backend to tensorflow by default
 ENV KERAS_BACKEND tensorflow
 
